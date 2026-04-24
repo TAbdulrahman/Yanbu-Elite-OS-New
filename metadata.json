@@ -1,0 +1,13 @@
+{
+  "name": "Yanbu Elite OS",
+  "description": "Unified high-end school governance system with AI student scanning, real-time movement tracking, asset governance, and executive dashboards.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "AI-powered scanning",
+    "Real-time governance",
+    "Bilingual support",
+    "Executive financial suites"
+  ]
+}

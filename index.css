@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Tajawal", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* King Black Theme Colors - Refined */
+  --color-matte-black: #0A0A0A;
+  --color-gold: #C5A059;
+  --color-gold-accent: #C5A059;
+  --color-gold-light: #E2C799;
+  --color-emerald: #10B981;
+  --color-ruby: #EF4444;
+  --color-surface-base: #121212;
+}
+
+@layer base {
+  body {
+    @apply bg-matte-black text-white antialiased font-sans transition-colors duration-300;
+  }
+
+  [dir="rtl"] body {
+    @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .gold-gradient {
+    background: linear-gradient(135deg, #C5A059 0%, #E2C799 100%);
+  }
+
+  .text-gold {
+    @apply text-gold;
+  }
+
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .tracking-extrawide {
+    letter-spacing: 0.25em;
+  }
+}
+
